@@ -1,1 +1,13 @@
-
+spring:
+  application:
+    name: recipe-app
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/recipeappdb
+    username: postgres
+    password: admin
