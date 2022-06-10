@@ -13,7 +13,7 @@ import javax.persistence.*;
 public class Unit {
     @Id
     @Setter(AccessLevel.NONE)
-    @Column(name = "id", nullable = false)
+    @Column(name = "id", nullable = false, updatable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
